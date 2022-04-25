@@ -9,7 +9,7 @@ function Detalhe({pokemon}) {
   useEffect(() => {
     (
       async () => {
-        const req = await fetch(`${API}/pokemon-form/${pokemon.name}`)
+        const req = await fetch(`${API}/pokemon/${pokemon.name}`)
         setItem(await req.json())
       }
     )()
